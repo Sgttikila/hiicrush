@@ -1,0 +1,44 @@
+<html>
+  <body>
+<h1 style="text-align:center; color: pink; font-family: cursive;">May chance ba ako sa'yo?</h1>
+    
+<img src="cat.jpg" style="display: block; margin: 0 auto; width: 150%; max-width: 150px; margin-top: 32px;">
+
+     <div id="buttonContainer">
+
+    <button id="yesButton" style="color: white; background-color: #90EE90;">Meron</button>
+    
+    <button id="no" style="color: white; background-color: pink;">Wala</button>
+</div>
+<p style="text-align:center;"><small>by:STIKILA</small></p>
+    </div>
+
+    <style>
+      div{
+        text-align:center;
+        vertical-align: middle;
+      }
+      #no{
+        position: absolute;
+      }
+    </style>
+    
+    <script>
+      document.getElementById("yesButton").addEventListener("click",showAlert);
+      function showAlert() {
+        alert ("hihi kaya sa'yo ako ehh, ingat ka lagi haa aanakan pa kita muahhhhhh");
+      }
+      
+      var no = document.getElementById("no");
+      
+      
+      no.addEventListener("click",change);
+      function change () {
+        var i = Math.floor(Math.random()*200)+1;
+        var j = Math.floor(Math.random()*650)+1;
+        no.style.left = i+"px";
+        no.style.top = j+"px";
+      }
+    </script>
+  </body>
+</html>
